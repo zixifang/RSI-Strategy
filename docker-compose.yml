@@ -1,0 +1,7 @@
+services:
+  backtest:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+    command: ["python", "-m", "src.main"]
